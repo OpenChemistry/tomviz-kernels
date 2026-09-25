@@ -1,0 +1,8 @@
+{
+  "name": "ReinterpretSignedToUnsigned",
+  "label": "Reinterpret Signed to Unsigned",
+  "description": "Reinterpret a signed integral array type as its unsigned counterpart.",
+  "path": ["Data Transforms", "Data Management"],
+  "tags": ["reinterpret", "signed", "unsigned", "data type", "conversion"],
+  "parameters": []
+}

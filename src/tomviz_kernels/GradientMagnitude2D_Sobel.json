@@ -1,0 +1,8 @@
+{
+  "name": "GradientMagnitude2D_Sobel",
+  "label": "2D Gradient Magnitude",
+  "description": "Calculate gradient magnitude of each tilt image using the Sobel operator.",
+  "path": ["Tomography", "Pre-processing"],
+  "tags": ["gradient", "magnitude", "sobel", "2D", "tilt series", "edge detection"],
+  "parameters": []
+}

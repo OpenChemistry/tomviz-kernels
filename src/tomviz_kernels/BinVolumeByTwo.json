@@ -1,0 +1,8 @@
+{
+  "name": "BinVolumeByTwo",
+  "label": "Bin Volume x2",
+  "description": "Downsample volume by a factor of 2.",
+  "path": ["Data Transforms", "Volume Manipulation"],
+  "tags": ["bin", "downsample", "volume", "2x", "resize"],
+  "parameters": []
+}

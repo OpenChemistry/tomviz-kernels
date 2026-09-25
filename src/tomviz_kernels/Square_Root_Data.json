@@ -1,0 +1,8 @@
+{
+  "name": "Square_Root_Data",
+  "label": "Square Root Data",
+  "description": "Compute the square root of each voxel in the dataset.",
+  "path": ["Data Transforms", "Math Operations"],
+  "tags": ["square root", "math", "transform", "power"],
+  "parameters": []
+}

@@ -1,0 +1,28 @@
+{
+  "name": "PowerSpectrumDensity",
+  "label": "Power Spectrum Density",
+  "description": "",
+  "path": ["Data Transforms", "Metrics & Spectral"],
+  "tags": ["power spectrum", "PSD", "fourier", "frequency", "resolution"],
+  "help": {
+    "url": "analysis.html#power-spectrum-density-psd"
+  },
+  "externalCompatible": false,
+  "apply_to_each_array": false,
+  "parameters": [
+    {
+      "name": "selected_scalars",
+      "label": "Scalars",
+      "type": "select_scalars"
+    }
+  ],
+  "results": [
+    {
+      "name": "plot",
+      "label": "PSD",
+      "type": "table"
+    }
+  ],
+  "inputType": "ImageData",
+  "outputType": "ImageData"
+}

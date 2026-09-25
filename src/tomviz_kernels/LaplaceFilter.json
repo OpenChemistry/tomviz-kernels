@@ -1,0 +1,8 @@
+{
+  "name": "LaplaceFilter",
+  "label": "Laplace Sharpen",
+  "description": "Apply a Laplace filter to the dataset.",
+  "path": ["Data Transforms", "Filters & Smoothing"],
+  "tags": ["laplace", "laplacian", "sharpen", "filter", "edge detection"],
+  "parameters": []
+}

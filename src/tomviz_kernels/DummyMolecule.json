@@ -1,0 +1,16 @@
+{
+  "name": "DummyMolecule",
+  "label": "Add Molecule",
+  "description": "Emit a benzene molecule at a fixed position.",
+  "path": ["Data Transforms", "Material Analysis"],
+  "tags": ["molecule", "atomic", "structure", "visualization"],
+  "results": [
+    {
+      "name": "molecule",
+      "label": "Reconstructed atomic positions",
+      "type": "molecule"
+    }
+  ],
+  "inputType": "ImageData",
+  "outputType": "ImageData"
+}

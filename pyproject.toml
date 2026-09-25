@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tomviz-kernels"
+dynamic = ["version"]
+description = "The operators / node kernels shared by the tomviz desktop and web applications."
+readme = "README.md"
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
+authors = [
+    { name = "Kitware, Inc.", email = "kitware@kitware.com" },
+]
+requires-python = ">=3.10"
+keywords = ["tomography", "tomviz", "kernels", "operators", "image-processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+# None on purpose: the kernels are scripts run by a host application
+# (tomviz, tomviz-web), which provides their runtime (numpy, scipy,
+# tomviz-pipeline, and the optional libraries some kernels need).
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest", "numpy", "scipy", "tomviz-pipeline>=3.1.6,<4"]
+dev = ["pytest", "numpy", "scipy", "tomviz-pipeline>=3.1.6,<4", "flake8"]
+
+[project.urls]
+Homepage = "https://www.tomviz.org/"
+Repository = "https://github.com/OpenChemistry/tomviz-kernels"
+Issues = "https://github.com/OpenChemistry/tomviz-kernels/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+tomviz_kernels = ["*.json"]
+
+[tool.setuptools.dynamic]
+version = { attr = "tomviz_kernels.__version__" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# Deprecations fail the suite, so a kernel using an API about to go away
+# in NumPy / SciPy shows up here before it breaks in the applications.
+filterwarnings = [
+    "error::DeprecationWarning",
+]

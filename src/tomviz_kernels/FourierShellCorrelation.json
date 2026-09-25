@@ -1,0 +1,28 @@
+{
+  "name": "FourierShellCorrelation",
+  "label": "Fourier Shell Correlation",
+  "description": "",
+  "path": ["Data Transforms", "Metrics & Spectral"],
+  "tags": ["FSC", "fourier", "resolution", "correlation", "metrics"],
+  "help": {
+    "url": "analysis.html#fourier-shell-correlation-fsc"
+  },
+  "externalCompatible": false,
+  "apply_to_each_array": false,
+  "parameters": [
+    {
+      "name": "selected_scalars",
+      "label": "Scalars",
+      "type": "select_scalars"
+    }
+  ],
+  "results": [
+    {
+      "name": "plot",
+      "label": "FSC",
+      "type": "table"
+    }
+  ],
+  "inputType": "ImageData",
+  "outputType": "ImageData"
+}

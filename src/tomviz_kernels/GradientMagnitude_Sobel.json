@@ -1,0 +1,8 @@
+{
+  "name": "GradientMagnitude_Sobel",
+  "label": "Gradient Magnitude",
+  "description": "Calculate 3D gradient magnitude using the Sobel operator.",
+  "path": ["Data Transforms", "Filters & Smoothing"],
+  "tags": ["gradient", "magnitude", "sobel", "3D", "edge detection", "filter"],
+  "parameters": []
+}

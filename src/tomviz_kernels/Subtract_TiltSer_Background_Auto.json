@@ -1,0 +1,8 @@
+{
+  "name": "Subtract_TiltSer_Background_Auto",
+  "label": "Background Subtraction (Auto)",
+  "description": "Subtract background from tilt images by finding the histogram peak as background level.",
+  "path": ["Tomography", "Pre-processing"],
+  "tags": ["background", "subtraction", "automatic", "histogram", "tilt series", "pre-processing"],
+  "parameters": []
+}

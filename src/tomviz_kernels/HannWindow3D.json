@@ -1,0 +1,8 @@
+{
+  "name": "HannWindow3D",
+  "label": "Hann Window",
+  "description": "Apply a 3D Hann window filter to the dataset.",
+  "path": ["Data Transforms", "Math Operations"],
+  "tags": ["hann", "hanning", "window", "apodization", "FFT"],
+  "parameters": []
+}

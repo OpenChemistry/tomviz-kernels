@@ -1,0 +1,8 @@
+{
+  "name": "BinTiltSeriesByTwo",
+  "label": "Bin Tilt Images x2",
+  "description": "Downsample tilt images by a factor of 2.",
+  "path": ["Tomography", "Pre-processing"],
+  "tags": ["bin", "downsample", "tilt series", "pre-processing", "2x"],
+  "parameters": []
+}

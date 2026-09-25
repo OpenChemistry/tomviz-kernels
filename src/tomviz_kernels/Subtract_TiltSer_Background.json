@@ -1,0 +1,8 @@
+{
+  "name": "Subtract_TiltSer_Background",
+  "label": "Background Subtraction (Manual)",
+  "description": "Subtract background from tilt images using average pixel value of a selected region.",
+  "path": ["Tomography", "Pre-processing"],
+  "tags": ["background", "subtraction", "manual", "tilt series", "pre-processing"],
+  "parameters": []
+}

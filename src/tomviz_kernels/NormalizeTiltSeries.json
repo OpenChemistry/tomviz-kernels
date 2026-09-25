@@ -1,0 +1,8 @@
+{
+  "name": "NormalizeTiltSeries",
+  "label": "Normalize Average Image Intensity",
+  "description": "Normalize tilt series so that each tilt image has the same total intensity.",
+  "path": ["Tomography", "Pre-processing"],
+  "tags": ["normalize", "intensity", "tilt series", "average", "pre-processing"],
+  "parameters": []
+}
