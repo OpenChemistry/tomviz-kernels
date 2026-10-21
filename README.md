@@ -28,8 +28,7 @@ them and runs them through its pipeline, which provides the `tomviz.*`
 modules they import: the desktop's own `tomviz` package, or
 [tomviz-pipeline](https://github.com/OpenChemistry/tomviz-pipeline)'s
 aliases for `tomviz.operators`, `tomviz.nodes`, `tomviz.utils` and
-`tomviz.dataset`. The ITK kernels also import `tomviz.itkutils`, which
-only the desktop provides today.
+`tomviz.dataset`.
 
 ### Catalog fields
 
@@ -47,9 +46,8 @@ search. The desktop builds its menus in C++ and ignores both.
 
 The package declares no runtime dependencies. The host provides NumPy,
 SciPy and tomviz-pipeline. Some kernels need more, imported when they
-run: `itk`, `tomopy`, `pyfftw`, `pystackreg`, `scikit-image`, `bm3d`, and
-for the SAM kernels `torch`, `sam2` / `sam3` (external environments
-only).
+run: `tomopy`, `pyfftw`, `pystackreg`, `scikit-image`, `bm3d`, and for
+the SAM kernels `torch`, `sam2` / `sam3` (external environments only).
 
 ## Use
 
@@ -89,6 +87,14 @@ These stayed in the desktop, because they only make sense there:
 - `Recon_real_time_tomography`, which needs `tomviz._realtime`;
 - `PtychoSource` and `PyXRFSource`, driven by the desktop's beamline
   workflows;
+- the kernels built on `tomviz.itkutils` and the ITK the desktop bundles:
+  `BinaryMinMaxCurvatureFlow`, `ElastixRegistration`,
+  `LabelObjectAttributes`, `LabelObjectDistanceFromPrincipalAxis`,
+  `LabelObjectPrincipalAxes`, `OtsuMultipleThreshold`,
+  `PeronaMalikAnisotropicDiffusion`, `SegmentParticles` and
+  `SegmentPores`;
+- `ManualManipulation`, whose rotations need ITK and whose parameters
+  are set by the desktop's interactive widget;
 - the SAM conda environment files (`tomviz/python/environments`).
 
 ## Development
