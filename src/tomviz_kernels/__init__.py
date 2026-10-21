@@ -17,7 +17,7 @@ kernel: hosts scanning ``directory()`` skip names starting with ``_``."""
 
 from pathlib import Path
 
-__version__ = '3.2.0'
+__version__ = '3.2.1'
 
 
 def directory() -> Path:
